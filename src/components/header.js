@@ -6,27 +6,28 @@ import Navigation from './navigation'
 const Header = ({ siteTitle }) => (
   <div
     style={{
-      marginBottom: `1.45rem`,
+      marginBottom: `1.25rem`,
     }}
   >
     <div
       style={{
-        // margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        margin: `3rem`,
+        maxWidth: 1200,
+        padding: `1.45rem 0`,
       }}
     >
-      <h1>
+      <h3>
         <Link
           to="/"
           style={{
             color: `black`,
             textDecoration: `none`,
+            fontWeight: `400`,
           }}
         >
           {siteTitle}
         </Link>
-      </h1>
+      </h3>
       <Navigation />
     </div>
   </div>

@@ -8,11 +8,12 @@ import './layout.css'
 
 const LayoutGrid = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
   grip-gap: 1rem;
 
-  justify-items: center;
+  max-width: 100vw;
+  height: 100%;
+  margin: 0 3rem;
 `
 
 const Layout = ({ children }) => (
@@ -29,16 +30,9 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <LayoutGrid
-        // style={{
-        //   margin: `0 auto`,
-        //   maxWidth: 1200,
-        //   padding: `0px 1.0875rem 1.45rem`,
-        //   paddingTop: 0,
-        // }}
-        >
+        <LayoutGrid>
           {children}
-          <footer>© {new Date().getFullYear()}, David Quick</footer>
+          {/* <footer>© {new Date().getFullYear()}, David Quick</footer> */}
         </LayoutGrid>
       </>
     )}

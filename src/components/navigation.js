@@ -16,9 +16,11 @@ const NavMenu = styled.ul`
 const Navigation = () => (
   <NavMenu>
     <Link style={{ textDecoration: 'none', color: 'black' }}>
-      <li>Volumes</li>
+      <li>About</li>
     </Link>
-    <li>Connect</li>
+    <Link style={{ textDecoration: 'none', color: 'black' }}>
+      <li>Connect</li>
+    </Link>
   </NavMenu>
 )
 
